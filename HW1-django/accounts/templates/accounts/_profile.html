@@ -1,0 +1,26 @@
+<div class="profiles">
+  <div class="profile bg-light">
+    <img
+      class="round-img"
+      src="{{ profile.image.url }}"
+      alt="Developer image!"
+    />
+    <div>
+      <h2>{{profile.name}} {{profile.last_name}}</h2>
+      <p>{{profile.job}} at {{profile.company}}</p>
+      <p>{{profile.city}}</p>
+      <a href="profile.html" class="btn btn-primary"> View Profile </a>
+    </div>
+
+    <ul>
+      <li class="text-primary">
+        <i class="fas fa-check"></i> {{profile.skill}}
+      </li>
+      {% comment %}
+      <li class="text-primary"><i class="fas fa-check"></i> CSS</li>
+      <li class="text-primary"><i class="fas fa-check"></i> JavaScript</li>
+      <li class="text-primary"><i class="fas fa-check"></i> Python</li>
+      {% endcomment %}
+    </ul>
+  </div>
+</div>
